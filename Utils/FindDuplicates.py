@@ -16,11 +16,20 @@
 # if list1 has number 1's two times, then take only two times number 1's from list2
 
 
-new_list1 = [1, 1, 2, 2, 3, 3, 4, 4, 4]
+list1 = [1, 1, 2, 2, 3, 3, 4, 4, 4]
 new_dict = {}
+count = []
 
-for i in new_list1:
-    new_dict[i] = new_list1.count(i)
+for i in list1:
+    new_dict[i] = list1.count(i)
+
+
+for i in new_dict:
+    count.append(new_dict[i])
+
 
 print(new_dict)
+print(count)
+
+
 
