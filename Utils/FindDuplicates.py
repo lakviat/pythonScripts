@@ -17,9 +17,9 @@
 
 #i do have count now, i need to match count with list2, to do that i need to find coun of each element in the loop
 
-list2 = [1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4]
+list2 = [1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5]
 
-list1 = [1, 1, 2, 2, 3, 3, 4, 4]
+list1 = [1, 1, 2, 2, 3, 3, 4, 4, 5]
 new_dict = {}
 count = []
 
@@ -32,6 +32,7 @@ for i in new_dict:
 
 
 alldif = []
+alldif2 = {}
 
 for key in new_dict:
     print(key, '->', new_dict[key])
@@ -39,10 +40,15 @@ for key in new_dict:
     for i in list2:
         if i == key:
             c = c + 1
-            if i != key+1 and c != new_dict[key]:
-                alldif.append(key)
+            if i == key and c != new_dict[key]:
+                #alldif.append(key)
+                alldif2 =+ key, c - new_dict[key]
+                if i not in new_dict:
+                    alldif2.up =+ key, c - new_dict[key]
 
-print(alldif, "printing alldif")
+
+print(alldif2)
+list = alldif2
 
 
 
