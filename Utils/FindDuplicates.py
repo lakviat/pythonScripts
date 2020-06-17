@@ -41,10 +41,9 @@ for key in new_dict:
         if i == key:
             c = c + 1
             if i == key and c != new_dict[key]:
-                #alldif.append(key)
                 alldif2 =+ key, c - new_dict[key]
                 if i not in new_dict:
-                    alldif2.up =+ key, c - new_dict[key]
+                    alldif2 =+ key, c - new_dict[key]
 
 
 print(alldif2)
