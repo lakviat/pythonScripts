@@ -1,5 +1,4 @@
-
-#This Function finds number fo duplicates and counts
+# This Function finds number fo duplicates and counts
 
 # We have two lists
 # list1 = []
@@ -17,14 +16,11 @@
 # if list1 has number 1's two times, then take only two times number 1's from list2
 
 
-new_list1 =  [1, 1, 2, 2, 3, 3, 4, 4, 4]
+new_list1 = [1, 1, 2, 2, 3, 3, 4, 4, 4]
 new_dict = {}
 
-
 for i in new_list1:
-
- new_dict[i]=new_list1.count(i)
-
+    new_dict[i] = new_list1.count(i)
 
 print(new_dict)
 
