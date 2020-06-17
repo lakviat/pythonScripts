@@ -1,5 +1,3 @@
-# This Function finds number fo duplicates and counts
-
 # We have two lists
 # list1 = []
 # list2 = []
@@ -14,9 +12,7 @@
 # the logic should be
 #
 # if list1 has number 1's two times, then take only two times number 1's from list2
-
 #i do have count now, i need to match count with list2, to do that i need to find coun of each element in the loop
-
 
 list2 = [1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5]
 list1 = [1, 1, 2, 2, 3, 3, 4, 4]
