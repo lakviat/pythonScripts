@@ -10,11 +10,11 @@
 # list2 = 1, 1, 2, 2, 3, 3, 4, 4]
 #
 # the logic should be
-##converting dictionary into map just in case
-#newmap = dict(zip(dict1, map(int, dict1.values())))
-#print(newmap , 'this is new map')
+# converting dictionary into map just in case
+# newmap = dict(zip(dict1, map(int, dict1.values())))
+# print(newmap , 'this is new map')
 # if list1 has number 1's two times, then take only two times number 1's from list2
-#i do have count now, i need to match count with list2, to do that i need to find coun of each element in the loop
+# i do have count now, i need to match count with list2, to do that i need to find coun of each element in the loop
 
 list2 = [11, 11, 22, 22, 33, 33, 44, 44, 44, 44, 44, 55, 55, 55]
 list1 = [11, 11, 22, 22, 33, 33, 44, 44, 55]
