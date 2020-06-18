@@ -10,92 +10,52 @@
 # list2 = 1, 1, 2, 2, 3, 3, 4, 4]
 #
 # the logic should be
-#
+##converting dictionary into map just in case
+#newmap = dict(zip(dict1, map(int, dict1.values())))
+#print(newmap , 'this is new map')
 # if list1 has number 1's two times, then take only two times number 1's from list2
 #i do have count now, i need to match count with list2, to do that i need to find coun of each element in the loop
 
-list2 = [1, 1, 2, 2, 3, 3, 4, 4, 4, 4, 4, 5, 5, 5]
-list1 = [1, 1, 2, 2, 3, 3, 4, 4]
-new_dict = {}
-count = []
+list2 = [11, 11, 22, 22, 33, 33, 44, 44, 44, 44, 44, 55, 55, 55]
+list1 = [11, 11, 22, 22, 33, 33, 44, 44, 55]
+dict1 = {}
+dict2 = {}
+count1 = []
+count2 = []
 
 for i in list1:
-    new_dict[i] = list1.count(i)
+    dict1[i] = list1.count(i)
+    count1.append(dict1[i])
+
+for i in list2:
+    dict2[i] = list2.count(i)
+    count2.append(dict2[i])
+
+for i in dict1:
+    print(i, 'list1 count -> ', dict1[i])
+
+print()
+for i in dict2:
+    print(i, 'list2 count -> ', dict2[i])
 
 
-for i in new_dict:
-    count.append(new_dict[i])
 
-#converting dictionary into map just in case
-newmap = dict(zip(new_dict, map(int, new_dict.values())))
-print(newmap , 'this is new map')
-
-
-alldif = []
 alldif2 = {}
+alldif3 = {}
+extraones = []
 
-for key in new_dict:
-    print(key, '->', new_dict[key])
+for key in dict1:
     c = 0
     for i in list2:
         if i == key:
             c = c + 1
-            if i == key and c != new_dict[key]:
-                alldif2 =+ key, c - new_dict[key]
-                if i not in new_dict:
-                    print("found")
+            if i == key and c != dict1[key]:
+                alldif2 =+ key, c - dict1[key]
+                for k in dict1.keys():
+                    if i != k:
+                        extraones.append(k)
 
-
-print(alldif2)
 list = alldif2
-
-
-# c = 0
-# newdict2 = {}
-#
-#
-# for i in list2:
-#     row = list2
-#     if row[i] == i:
-#         c = c + 1
-#     if row[i+1] != i:
-#         c = 0
-#
-#         alldif.append(list2)
-#         print("found match")
-#
-#
-# for i in list1:
-#     for x in list2:
-#         value1 = i
-#         value2 = x
-#         if value1 == value2:
-#             c = c + 1
-#             if value1 != x+1:
-#                 c = 0
-#
-#
-# print(alldif)
-# print(list2)
-# print(new_dict)
-# print(count)
-# print(c)
-
-
-# def getdupcates(listOfElems):
-#     ''' Get frequency count of duplicate elements in the given list '''
-#     dictOfElems = dict()
-#     # Iterate over each element in list
-#     for elem in listOfElems:
-#         # If element exists in dict then increment its value else add it in dict
-#         if elem in dictOfElems:
-#             dictOfElems[elem] += 1
-#         else:
-#             dictOfElems[elem] = 1
-#
-#             # Filter key-value pairs in dictionary. Keep pairs whose value is greater than 1 i.e. only duplicate elements from list.
-#     dictOfElems = {key: value for key, value in dictOfElems.items() if value > 1}
-#     # Returns a dict of duplicate elements and thier frequency count
-#     return dictOfElems
-
+print(alldif2)
+print(alldif3)
 
