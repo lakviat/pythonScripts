@@ -18,6 +18,12 @@
 
 list2 = [11, 11, 22, 22, 33, 33, 44, 44, 44, 44, 44, 55, 55, 55]
 list1 = [11, 11, 22, 22, 33, 33, 44, 44, 55]
+
+if len(list2) > len(list1):
+    print("list2 is bigger")
+else:
+    print("list1 is bigger")
+
 dict1 = {}
 dict2 = {}
 count1 = []
@@ -34,7 +40,6 @@ for i in list2:
 for i in dict1:
     print(i, 'list1 count -> ', dict1[i])
 
-print()
 for i in dict2:
     print(i, 'list2 count -> ', dict2[i])
 
