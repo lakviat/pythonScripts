@@ -25,7 +25,7 @@ class Utilities:
                 if i == key:
                     c = c + 1
                     if i == key and c != dict1[key]:
-                        alldif2 = + key, c - dict1[key]
+                        alldif2[i] =  c - dict1[key]
                         for k in dict1.keys():
                             if i != k:
                                 extraones.append(k)
