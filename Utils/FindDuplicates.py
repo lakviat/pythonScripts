@@ -37,12 +37,8 @@ for i in list2:
     dict2[i] = list2.count(i)
     count2.append(dict2[i])
 
-for i in dict1:
-    print(i, 'list1 count -> ', dict1[i])
-
-for i in dict2:
-    print(i, 'list2 count -> ', dict2[i])
-
+print(dict1)
+print(dict2)
 
 
 alldif2 = {}
@@ -62,5 +58,4 @@ for key in dict1:
 
 list = alldif2
 print(alldif2)
-print(alldif3)
 
