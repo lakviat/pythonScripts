@@ -42,7 +42,6 @@ print(dict2)
 
 
 alldif2 = {}
-alldif3 = {}
 extraones = []
 
 for key in dict1:
@@ -51,11 +50,30 @@ for key in dict1:
         if i == key:
             c = c + 1
             if i == key and c != dict1[key]:
-                alldif2 =+ key, c - dict1[key]
+                alldif2[i] = c - dict1[key]
                 for k in dict1.keys():
                     if i != k:
                         extraones.append(k)
 
-list = alldif2
-print(alldif2)
+
+storing = {}
+numberoftimestoremove = []
+counts = []
+cs = 0
+for k in alldif2.values():
+    cs = cs + 1
+    if k > 0:
+        numberoftimestoremove.append(k)
+        counts.append(cs)
+
+
+
+
+newlist = []
+mismatches = []
+print(counts, 'these are the counts i need to remove from list')
+print(numberoftimestoremove, 'number of times i need to remove ')
+
+
+
 
