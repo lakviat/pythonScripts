@@ -37,8 +37,8 @@ for i in list2:
     dict2[i] = list2.count(i)
     count2.append(dict2[i])
 
-print(dict1)
-print(dict2)
+print(dict1, count1)
+print(dict2, count2)
 
 
 alldif2 = {}
@@ -56,7 +56,6 @@ for key in dict1:
                         extraones.append(k)
 
 
-storing = {}
 numberoftimestoremove = []
 counts = []
 cs = 0
@@ -76,15 +75,21 @@ for item in dict1.keys():
 if len(findtseritemidsthatarenotpresent) == 0:
     print("ALL TSER ITEM IDS MATCHING")
 else:
-    print("These TSER ITEMS ARE NOT PRESENT:", findtseritemidsthatarenotpresent)
-#Keys are the TSER_ITEM_IDS --> values are the COUNTS
+    print("THESE TSER ITEMS ARE NOT PRESENT:", findtseritemidsthatarenotpresent)
 
-
-
-newlist = []
-mismatches = []
 print(counts, 'these are the counts i need to remove from list')
 print(numberoftimestoremove, 'number of times i need to remove ')
+
+
+#THIS FUNCTION FINDS THE DIFFERENCES ACCORDING TO COUNT IN BETWEEN TWO DICT
+tseritemdifferences = []
+for key in set(dict1) & set(dict2):
+    if dict1[key] != dict2[key]:
+        tseritemdifferences.append(key)
+
+
+print(tseritemdifferences, 'THIS TSER ITEMS HAVE DIFFERENCES', "TIMES")
+print(numberoftimestoremove)
 
 
 
