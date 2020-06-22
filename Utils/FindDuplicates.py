@@ -68,6 +68,18 @@ for k in alldif2.values():
 
 
 
+findtseritemidsthatarenotpresent = []
+for item in dict1.keys():
+    if item not in dict2.keys():
+        findtseritemidsthatarenotpresent.append(item)
+
+if len(findtseritemidsthatarenotpresent) == 0:
+    print("ALL TSER ITEM IDS MATCHING")
+else:
+    print("These TSER ITEMS ARE NOT PRESENT:", findtseritemidsthatarenotpresent)
+
+
+
 
 newlist = []
 mismatches = []
