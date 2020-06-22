@@ -77,8 +77,7 @@ if len(findtseritemidsthatarenotpresent) == 0:
 else:
     print("THESE TSER ITEMS ARE NOT PRESENT:", findtseritemidsthatarenotpresent)
 
-print(counts, 'these are the counts i need to remove from list')
-print(numberoftimestoremove, 'number of times i need to remove ')
+print(numberoftimestoremove, 'NUMBER OF TIMES NEEDS TO BE REMOVED FROM LONGEST LIST')
 
 
 #THIS FUNCTION FINDS THE DIFFERENCES ACCORDING TO COUNT IN BETWEEN TWO DICT
@@ -88,7 +87,7 @@ for key in set(dict1) & set(dict2):
         tseritemdifferences.append(key)
 
 
-print(tseritemdifferences, 'THIS TSER ITEMS HAVE DIFFERENCES', "TIMES")
+print(tseritemdifferences, 'THESE ARE TSER ITEMS HAVE DIFFERENCES', "TIMES")
 print(numberoftimestoremove)
 
 
