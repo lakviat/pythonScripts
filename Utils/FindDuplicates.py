@@ -67,7 +67,7 @@ for k in alldif2.values():
         counts.append(cs)
 
 
-
+# This Function will catch TSER_ITEM_IDS in case its not present in diff env
 findtseritemidsthatarenotpresent = []
 for item in dict1.keys():
     if item not in dict2.keys():
@@ -77,7 +77,7 @@ if len(findtseritemidsthatarenotpresent) == 0:
     print("ALL TSER ITEM IDS MATCHING")
 else:
     print("These TSER ITEMS ARE NOT PRESENT:", findtseritemidsthatarenotpresent)
-
+#Keys are the TSER_ITEM_IDS --> values are the COUNTS
 
 
 
