@@ -90,6 +90,30 @@ for key in set(dict1) & set(dict2):
 print(tseritemdifferences, 'THESE ARE TSER ITEMS HAVE DIFFERENCES', "TIMES")
 print(numberoftimestoremove)
 
+print(numberoftimestoremove, 'NUMBER OF TIMES NEEDS TO BE REMOVED FROM LONGEST LIST')
+
+cyt = 0
+# 44 i need to remove 3 times and 55 i need to remove 2 times
+# 44
+kotok = 0
+for i in tseritemdifferences:
+    if i in list2:
+        cyt = cyt + 1
+        cit = numberoftimestoremove[kotok]
+        kotok = kotok + 1
+        indexes = 0
+        while indexes != cit:
+            list2.remove(i)
+            indexes = indexes + 1
+            continue
+        else:
+            continue
+
+
+print(tseritemdifferences, 'this is tseritem differences')
+print("result should be 44 : 2 55 : 1")
+print('this is a new list2\n')
+print(list2)
 
 
 
